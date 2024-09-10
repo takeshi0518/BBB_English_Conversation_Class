@@ -3,6 +3,7 @@
 @use '../sass/base/reset';
 @use '../sass/mixin/responsive.scss' as *;
 @use'../sass/base/config' as *;
+@use'../sass/layout/header' as *;
 
 
 html {
@@ -12,5 +13,3 @@ html {
 body {
   font-family: "Zen Kaku Gothic New", sans-serif;
 }
-
-
