@@ -1,0 +1,48 @@
+@use '../mixin/responsive' as *;
+@use '../base/config' as *;
+
+.burger {
+  background-color: $red;
+  width: 100px;
+  height: 100px;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 2;
+  cursor: pointer;
+  transition: opacity .3s;
+  @include responsive (tb) {
+    width: 75px;
+    height: 75px;
+  }
+}
+.burger:hover {
+  opacity: 0.6;
+}
+.burger__inner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.burger__icon {
+  display: block;
+  width: 50px;
+  height: 2px;
+  background-color: $white;
+  @include responsive (tb) {
+    width: 35px;
+  }
+}
+.burger__icon:first-child {
+  margin-bottom: 14px;
+  @include responsive (tb) {
+    margin-bottom: 11px;
+  }
+}
+.burger__icon:last-child {
+  margin-top: 14px;
+  @include responsive (tb) {
+    margin-top: 11px;
+  }
+}

@@ -1,9 +1,12 @@
 @charset "utf-8";
 
-@use '../sass/base/reset';
-@use '../sass/mixin/responsive.scss' as *;
-@use'../sass/base/config' as *;
-@use'../sass/layout/header' as *;
+@use  '../sass/base/reset';
+@use  '../sass/mixin/responsive.scss' as *;
+@use  '../sass/base/config' as *;
+@use  '../sass/layout/header' as *;
+@use   '../sass/components/burger';
+@use  '../sass/layout/mainVisual';
+@use  '../sass/components/mainvisual-btn';
 
 
 html {
