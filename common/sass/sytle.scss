@@ -9,6 +9,10 @@
 @use  '../sass/components/mainvisual-btn';
 @use '../sass/layout/reason';
 @use '../sass/components/section-title';
+@use '../sass/layout/container';
+@use '../sass/layout/voice';
+
+
 
 
 html {
@@ -17,3 +21,11 @@ html {
 body {
   font-family: "Arial", sans-serif;
 }
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+
+
