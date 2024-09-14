@@ -1,0 +1,28 @@
+@use '../mixin/responsive' as *;
+@use '../base/config' as *;
+
+
+.section-title {
+  font-size: 36px;
+  line-height: 1.2;
+  letter-spacing: 4px;
+  text-align: center;
+  position: relative;
+  @include responsive(tb) {
+    font-size: 28px;
+  }
+}
+.section-title::after {
+  content: '';
+  display: inline-block;
+  width: 100px;
+  height: 2px;
+  background-color: $font_color;
+  position: absolute;
+  bottom: -20px;
+  right: 50%;
+  transform: translateX(50%);
+  @include responsive(tb) {
+    width: 80px;
+  }
+}

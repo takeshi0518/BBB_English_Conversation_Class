@@ -7,12 +7,13 @@
 @use   '../sass/components/burger';
 @use  '../sass/layout/mainVisual';
 @use  '../sass/components/mainvisual-btn';
+@use '../sass/layout/reason';
+@use '../sass/components/section-title';
 
 
 html {
   font-size: 0.75rem;
 }
-
 body {
-  font-family: "Zen Kaku Gothic New", sans-serif;
+  font-family: "Arial", sans-serif;
 }
