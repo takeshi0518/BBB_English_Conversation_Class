@@ -216,7 +216,7 @@ input, select {
 
 .mainvisual__text {
   font-size: 46px;
-  letter-spacing: 5px;
+  letter-spacing: 4px;
   line-height: 1.6;
   text-shadow: 0 4px 6px #fff;
 }
@@ -301,12 +301,108 @@ input, select {
   transform: translateY(-50%) rotate(45deg);
 }
 
+.reason {
+  margin-top: 120px;
+}
+
+.reason__list {
+  min-height: 600px;
+  margin-top: 100px;
+  background-color: #FF2A2A;
+  position: relative;
+}
+
+.reason__item {
+  padding: 70px 20px;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  position: absolute;
+}
+@media (width <= 900px) {
+  .reason__item {
+    width: calc(100% - 16px);
+    padding: 65px 15px;
+  }
+}
+
+.reason__item--left {
+  border-radius: 0 20px 20px 0;
+  top: 80px;
+  left: 0;
+}
+
+.reason__item--right {
+  border-radius: 20px 0 0 20px;
+  top: 320px;
+  right: 0;
+}
+
+.reason__img {
+  vertical-align: bottom;
+}
+
+.reason__text {
+  margin-left: 30px;
+}
+
+.reason__title {
+  font-size: 28px;
+  font-weight: bold;
+  line-height: 1.2;
+  color: #FF2A2A;
+}
+@media (width <= 900px) {
+  .reason__title {
+    font-size: 24px;
+  }
+}
+
+.reason__caption {
+  margin-top: 5px;
+  font-size: 18px;
+  color: #333;
+  line-height: 1.2;
+}
+
+.section-title {
+  font-size: 36px;
+  line-height: 1.2;
+  letter-spacing: 4px;
+  text-align: center;
+  position: relative;
+}
+@media (width <= 900px) {
+  .section-title {
+    font-size: 28px;
+  }
+}
+
+.section-title::after {
+  content: "";
+  display: inline-block;
+  width: 100px;
+  height: 2px;
+  background-color: #333;
+  position: absolute;
+  bottom: -20px;
+  right: 50%;
+  transform: translateX(50%);
+}
+@media (width <= 900px) {
+  .section-title::after {
+    width: 80px;
+  }
+}
+
 html {
   font-size: 0.75rem;
 }
 
 body {
-  font-family: "Zen Kaku Gothic New", sans-serif;
+  font-family: "Arial", sans-serif;
 }
 
 /*# sourceMappingURL=sytle.css.map */

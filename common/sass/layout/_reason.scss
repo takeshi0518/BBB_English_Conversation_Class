@@ -1,0 +1,62 @@
+@use '../mixin/responsive' as *;
+@use '../base/config' as *;
+
+
+.reason {
+  margin-top: 120px;
+}
+
+.reason__list {
+  min-height: 600px;
+  margin-top: 100px;
+  background-color: $red;
+  position: relative;
+}
+
+.reason__item {
+  padding: 70px 20px;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $white;
+  position: absolute;
+  @include responsive (tb) {
+    width: calc(100% - 16px);
+    padding: 65px 15px;
+  }
+}
+.reason__item--left {
+  border-radius: 0 20px 20px 0;
+  top: 80px;
+  left: 0;
+  // transform: translateX(-100%);
+}
+.reason__item--right {
+  border-radius: 20px 0 0 20px;
+  top: 320px;
+  right: 0;
+  // transform: translateX(100%);
+}
+
+.reason__img {
+  vertical-align: bottom
+}
+.reason__text  {
+  margin-left: 30px;
+}
+.reason__title {
+  font-size: 28px;
+  font-weight: bold;
+  line-height: 1.2;
+  color: $red;
+  @include responsive (tb) {
+    font-size: 24px;
+  }
+}
+.reason__caption {
+  margin-top: 5px;
+  font-size: 18px;
+  color: $font_color;
+  line-height: 1.2;
+}
