@@ -1,0 +1,25 @@
+@use '../mixin/responsive' as *;
+@use '../base/config' as *;
+
+
+.entry {
+  margin-top: 120px;
+}
+.entry__text-wrapper {
+  text-align: center;
+}
+.entry__title {
+  font-size: 32px;
+  line-height: 1.2;
+  color: $font_color;
+}
+.entry__subtitle {
+  margin-top: 5px;
+  display: inline-block;
+  font-size: 18px;
+  line-height: 1.2;
+  color: $font_color;
+}
+
+
+
