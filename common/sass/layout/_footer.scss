@@ -3,8 +3,8 @@
 
 
 .footer {
-  margin-top: 100px;
-  background-color: #e8e8e8;
+  margin-top: 120px;
+  background-color: $footer_background-color;
 }
 .footer__list {
   padding: 60px 0 60px 0;
@@ -16,7 +16,7 @@
   }
 }
 .footer__item {
-  width: calc(100% / 4);
+  width: 25%;
   @include responsive (tb) {
     width: 50%;
   }
@@ -28,23 +28,23 @@
   }
 }
 .footer__item-title {
-  margin-bottom: 10px;
   font-size: 16px;
   font-weight: bold;
   line-height: 1.2;
-  color: $font_color;
+}
+.footer__item-contents {
+  padding: 10px 0 0 10px;
 }
 .footer__item-content {
-  margin: 0 0 3px 10px;
+  margin-bottom: 3px;
 }
 .footer__item-content:last-child {
   margin-bottom: 0;
 }
 .footer__item-link {
   font-size: 14px;
+  color: $font_color-bk;
   line-height: 1.2;
-  color: $font_color;
-  letter-spacing: 1.4px;
 }
 .footer__item-link:hover {
   opacity: 0.7;

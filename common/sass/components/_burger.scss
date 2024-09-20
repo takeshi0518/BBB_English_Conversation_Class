@@ -1,5 +1,7 @@
 @use '../mixin/responsive' as *;
 @use '../base/config' as *;
+@use '../base/z_index.scss' as fn;
+
 
 .burger {
   background-color: $red;
@@ -8,7 +10,7 @@
   position: fixed;
   top: 0;
   right: 0;
-  z-index: 2;
+  z-index: fn.z-index(burger);
   cursor: pointer;
   transition: opacity .3s;
   @include responsive (tb) {

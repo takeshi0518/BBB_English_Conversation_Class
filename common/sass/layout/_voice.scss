@@ -49,7 +49,6 @@
 .voice__img-text {
   font-size: 12px;
   line-height: 1.2;
-  color: $font_color;
   text-align: center;
 }
 .voice__text {
@@ -58,11 +57,9 @@
   width: 100%;
   max-width: 516px;
   border-radius: 15px;
-  background-color: #E9F1FB;
+  background-color: $voiceText_background-color;
   font-size: 16px;
   line-height: 1.5;
-  letter-spacing: 2px;
-  color: $font_color;
   position: relative;
 }
 .voice__text::before {
