@@ -1,0 +1,8 @@
+$z-index-list: (
+  burger,
+  mainvisual__text-wrapper,
+);
+
+@function z-index($name) {
+  @return index($z-index-list, $name)
+};

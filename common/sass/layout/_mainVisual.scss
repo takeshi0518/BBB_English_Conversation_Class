@@ -1,5 +1,6 @@
 @use '../mixin/responsive' as *;
 @use '../base/config' as *;
+@use '../base/z_index.scss' as fn;
 
 .mainvisual {
   height: 720px;
@@ -15,7 +16,7 @@
   position: absolute;
   top: 280px;
   left: 140px;
-  z-index: 1;
+  z-index: fn.z-index(mainvisual__text-wrapper);
   @include responsive(tb) {
     position: static;
     max-width: 100%;
