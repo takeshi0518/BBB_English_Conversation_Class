@@ -1,6 +1,9 @@
+
 $z-index-list: (
-  burger,
   mainvisual__text-wrapper,
+  burger__menu,
+  header__logo,
+  burger,
 );
 
 @function z-index($name) {

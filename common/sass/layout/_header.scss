@@ -1,14 +1,18 @@
 @use '../base/config' as *;
 @use '../mixin/responsive' as *;
+@use '../base/z_index.scss' as fn;
 
 .header {
   width: 100%;
   height: 100px;
   display: flex;
   justify-content: space-between;
+
 }
 .header__logo {
   padding: 40px 0 0 50px;
+  position: fixed;
+  z-index: fn.z-index(header__logo);
   @include responsive(tb) {
     padding: 25px 0 0 25px;
   }

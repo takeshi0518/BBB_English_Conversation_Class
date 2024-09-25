@@ -17,17 +17,30 @@
   <header class="header">
     <h1 class="header__logo">
       <a href="#" class="header__link">
-        <img src="/common/img/logo-r.svg" alt="BBB英会話教室" class="header__logo-img">
+        <img src="/common/img/logo-r.svg" alt="BBB英会話教室" class="header__logo-img" id="js-logoImg">
       </a>
     </h1>
 
-    <div class="burger"> 
+<!-- burger-icon -->
+    <div class="burger" id="js-burger"> 
       <div class="burger__inner">
         <span class="burger__icon"></span>
         <span class="burger__icon"></span>
         <span class="burger__icon"></span>
       </div>
     </div>
+
+<!-- burger-menu -->
+    <nav class="burger__menu" id="js-burgerMenu">
+      <ul class="burger__menuList">
+        <li class="burger__menuItem"><a href="#" class="burger__itemLink">BBBが選ばれる理由</a></li>
+        <li class="burger__menuItem"><a href="#" class="burger__itemLink">受講生の声</a></li>
+        <li class="burger__menuItem"><a href="#" class="burger__itemLink">スクールの概要</a></li>    
+      </ul>
+      <div class="burger__btn">
+        <a href="#" class="burger__btnLink">無料体験に申し込む</a>
+      </div>
+    </nav>
   </header>
 
   <main>
@@ -236,5 +249,7 @@
       <small class="footer__copy">© BBB English School</small>
     </div>
   </footer>
+
+  <script src="/common/js/index.js"></script>
 </body>
 </html>
